@@ -7,6 +7,7 @@ import { Navigation } from "swiper/modules";
 import ListingIteam from "../components/ListingIteams.jsx";
 import { ReactTyped } from "react-typed";
 import { TypeAnimation } from 'react-type-animation';
+import Footer from "../footer/Footer";
 
 const Home = () => {
   const [offerListings, setOfferListings] = useState([]);
@@ -52,17 +53,21 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="-z-10">
-      {/* top */}
+    <>
+    <div>
+    {/* top */}
+   
 
       <div className="flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto">
-        <h1 className="text-slate-700 font-bold text-3xl lg:text-6xl md:text-4xl">
+      <h1 className="text-slate-700 font-bold text-3xl lg:text-6xl md:text-4xl">
         <ReactTyped strings={["Find your next "]} loop typeSpeed={100}  backSpeed={50} />
          <span className="text-orange-400">perfect</span>
           <br />
           place with ease
        
         </h1>
+
+        <h1>akjnksjcsk</h1>
 
         <div className="text-gray-400 text-xs sm:text-sm">
           Booking Estate is best place to find your next perfect place to live.
@@ -79,7 +84,7 @@ const Home = () => {
         </Link>
 
       
-    <br />
+
 
   
 
@@ -175,6 +180,8 @@ const Home = () => {
         )}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

@@ -57,6 +57,18 @@ const Header = () => {
             </li>
           </Link>
 
+          <Link to="/blog">
+            <li className="hidden sm:inline text-lg font-bold hover:text-red-600 cursor-pointer">
+              Blog
+            </li>
+          </Link>
+
+          <Link to="/testimonail">
+            <li className="hidden sm:inline text-lg font-bold hover:text-red-600 cursor-pointer">
+              Testimonial
+            </li>
+          </Link>
+
           </ul>
 
           <input

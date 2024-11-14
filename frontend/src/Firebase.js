@@ -5,7 +5,7 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCJXHt8j5ooaWJSYNkxRgiiBlLzyWlxeto",
+  apiKey: import.meta.env.FIREBASE_API_KEY ,
   authDomain: "mern-hotel-booking-app-bd6fd.firebaseapp.com",
   projectId: "mern-hotel-booking-app-bd6fd",
   storageBucket: "mern-hotel-booking-app-bd6fd.appspot.com",

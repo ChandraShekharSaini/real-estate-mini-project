@@ -79,7 +79,7 @@ const UpdateListing = () => {
 
     const fetchlisting = async () => {
       try {
-        let listing1 = await fetch(`/api/listing/get/${listing}`, {
+        let listing1 = await fetch(`http://localhost:4444/api/listing/get/${listing}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -182,7 +182,7 @@ const UpdateListing = () => {
 
       const listing = params.listingId;
 
-      let res = await fetch(`/api/listing/update/${listing}`, {
+      let res = await fetch(`http://localhost:4444/api/listing/update/${listing}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

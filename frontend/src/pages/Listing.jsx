@@ -29,10 +29,10 @@ const Listing = () => {
   useEffect(() => {
     const fetchListingData = async () => {
       const listing = params.listingId;
-
+    
       try {
         setLoadingEffect(true);
-        let res = await fetch(`/api/listing/get/${listing}`, {
+        let res = await fetch(`http://localhost:4444/api/listing/get/${listing}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

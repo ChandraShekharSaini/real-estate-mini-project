@@ -2,7 +2,9 @@ import express from 'express'
 import mongoose from 'mongoose'
 import cookieParser from 'cookie-parser'
 import path from 'path'
+import dotenv from 'dotenv'
 
+dotenv.config()
 
 const PORT = process.env.PORT || 4444
 
@@ -10,7 +12,7 @@ mongoose
   .connect(process.env.MONGO)
   .then(() => {
     console.log('Connected to DB');
-  
+     
   })
   .catch((error) => {
     console.log(error);

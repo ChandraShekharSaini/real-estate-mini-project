@@ -2,7 +2,7 @@ import path from 'path'
 import express from 'express'
 const router = express.Router();
 
-import { getUser, postUpdateUser, deleteUser, getUserListing, getUserData } from '../controller/user.controller.js'
+import { postUpdateUser, deleteUser, getUserListing, getUserData } from '../controller/user.controller.js'
 
 
 

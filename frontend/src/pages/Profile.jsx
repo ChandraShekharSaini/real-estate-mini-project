@@ -28,11 +28,8 @@ import {
   signOutUserStart,
 } from "../redux/user/userSlice";
 
-import { Link } from "react-router-dom";
-<<<<<<< HEAD
+import { Link } from "react-route-dom"
 
-=======
->>>>>>> be2b0603431547a983d50229ce5b50b654019737
 
 const Profile = () => {
   const dispatch = useDispatch();

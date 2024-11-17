@@ -38,7 +38,9 @@ app.listen(PORT, () => {
 
 
 
-
+app.get('/',(req, res) => {
+  res.json("I am god")
+})
 app.use('/api/user', userRouter);
 app.use('/api/auth', authRouter)
 app.use('/api/listing', listingRouter);

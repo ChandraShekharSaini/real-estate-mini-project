@@ -29,7 +29,7 @@ import {
 } from "../redux/user/userSlice";
 
 import { Link } from "react-router-dom";
-import { Cursor } from "mongoose";
+
 
 const Profile = () => {
   const dispatch = useDispatch();

@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:4444",
+        target: "https://real-estate-backend-s2po.onrender.com",
         secure: false,
       },
     },

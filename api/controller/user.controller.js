@@ -3,9 +3,6 @@ import Listing from "../models/Listing.model.js"
 import errorHandler from "../utilis/error.js"
 import bcrypt from "bcryptjs"
 
-export const getUser = (req, res) => {
-  res.send("I am Lalu");
-};
 
 export const postUpdateUser = async (req, res, next) => {
   console.log("InSide Post Update");

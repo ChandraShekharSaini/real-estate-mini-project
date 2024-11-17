@@ -54,7 +54,7 @@ export const updateListing = async (req, res, next) => {
 };
 
 export const getListing = async (req, res, next) => {
-  console.log("inside---2");
+ 
   try {
     let listing = await Listing.findById({ _id: req.params.id });
     if (!listing) return next(errorHandler(401, "Listing not found"));
@@ -72,19 +72,19 @@ export const getListings = async (req, res, next) => {
     const startIndex = parseInt(req.query.startIndex) || 0;
     let offer = req.query.offer;
 
-    if (offer === undefined || offer === "false") {
+    if (offer === undefined || offer === false) {
       offer = { $in: [false, true] };
     }
 
     let furnished = req.query.furnished;
 
-    if (furnished === undefined || furnished === "false") {
+    if (furnished === undefined || furnished === false) {
       furnished = { $in: [false, true] };
     }
 
     let parking = req.query.parking;
 
-    if (parking === undefined || parking === "false") {
+    if (parking === undefined || parking === false) {
       parking = { $in: [false, true] };
     }
 
@@ -111,7 +111,7 @@ export const getListings = async (req, res, next) => {
       .limit(limit)
       .skip(startIndex);
 
-    res.status(200).json(listings);
+    
 
     return res.status(200).json(listings);
   } catch (error) {

@@ -10,9 +10,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <Auth0Provider
     domain="dev-mluhsyj60jpe2q6p.us.auth0.com"
     clientId="t6qWthDYb4JDZVLcFQ9xX5r60gZP6dqQ"
-    authorizationParams={{
-      redirect_uri: window.location.origin,
-    }}
+    // authorizationParams={{
+    
+    // }}
   >
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>

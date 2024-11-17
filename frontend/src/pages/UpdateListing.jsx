@@ -40,7 +40,7 @@ const UpdateListing = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  console.log(files);
+
 
   const handleImageSubmit = (e) => {
     if (files.length > 0 && files.length + formData.imageUrls.length < 7) {
@@ -87,7 +87,7 @@ const UpdateListing = () => {
         });
 
         let data = await listing1.json();
-        console.log(data);
+    
         if (data.success == false) {
           console.log(data.message);
           return;
@@ -208,10 +208,7 @@ const UpdateListing = () => {
   };
 
 
-    const handleUpdate = (e)=>{
-            e.preventDefault()
-       toast.warn("Update Successfully")
-    }
+  
 
   return (
     <main className="p-3 max-w-4xl mx-auto my-60px">
@@ -220,7 +217,7 @@ const UpdateListing = () => {
         <Notification/>
         <form
           onSubmit={handleSubmit}
-          onSubmi={handleUpdate}
+      
           className="flex flex-col sm:flex-row gap-4 my-5"
         >
           <div className="flex flex-col gap-4 flex-1">
@@ -455,7 +452,7 @@ const UpdateListing = () => {
                 );
               })}
             <button
-              onClick={handleUpdate}
+            
               disabled={loading || uploading}
               className="p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80"
             >

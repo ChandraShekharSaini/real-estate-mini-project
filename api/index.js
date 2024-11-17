@@ -10,7 +10,7 @@ mongoose
   .connect(process.env.MONGO)
   .then(() => {
     console.log('Connected to DB');
-    console.log(process.env);
+  
   })
   .catch((error) => {
     console.log(error);

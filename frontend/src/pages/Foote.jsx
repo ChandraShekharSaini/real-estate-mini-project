@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Company Name</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">Heritage Estate</h3>
             <p className="text-sm leading-relaxed opacity-80">
               Empowering innovation through technology. We create solutions that make a difference.
             </p>
@@ -20,12 +20,12 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">+91 8445680548</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5" />
-                <a href="mailto:contact@company.com" className="text-sm hover:text-white transition-colors">
-                  contact@company.com
+                <a href="#" className="text-sm hover:text-white transition-colors">
+                  chandrashekharsaini322@gmail.com
                 </a>
               </div>
             </div>
@@ -37,9 +37,9 @@ const Footer = () => {
             <div className="flex items-start gap-3">
               <MapPin className="w-5 h-5 mt-1" />
               <p className="text-sm leading-relaxed">
-                123 Innovation Drive<br />
-                Tech Valley, CA 94043<br />
-                United States
+                Village-Kaluwala Jahanpur,<br />
+                Saharanpur  <br />
+                India
               </p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Footer = () => {
               <a href="#" className="hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-full">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-full">
+              <a href="https://www.linkedin.com/in/chandra-shekhar-saini-772b53249/" className="hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-full">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>

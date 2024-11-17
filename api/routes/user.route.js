@@ -4,7 +4,7 @@ const router = express.Router();
 
 import { getUser, postUpdateUser, deleteUser, getUserListing, getUserData } from '../controller/user.controller.js'
 
-router.get("/", getUser);
+
 
 router.post("/update/:id", postUpdateUser);
 

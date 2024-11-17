@@ -8,9 +8,11 @@ const LocationInfo = () => {
       <div className="flex items-start gap-3 hover:-translate-y-1 transition-transform duration-300">
         <MapPin className="w-5 h-5 mt-1" />
         <p className="text-sm leading-relaxed">
-          123 Innovation Drive<br />
-          Tech Valley, CA 94043<br />
-          United States
+          Vilage-Kaluwala Jahanpur
+          <br />
+          Saharanpur
+          <br />
+          India
         </p>
       </div>
     </div>

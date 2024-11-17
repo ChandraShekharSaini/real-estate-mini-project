@@ -50,11 +50,8 @@ const Search = () => {
         setLoading(true);
         setShowMore(false);
         const searchQuery = urlParams.toString();
-<<<<<<< HEAD
+
         const res = await fetch(`http://localhost:4444/api/listing/get?${searchQuery}`);
-=======
-        const res = await fetch(`https://real-estate-backend-s2po.onrender.com/listing/get?${searchQuery}`);
->>>>>>> be2b0603431547a983d50229ce5b50b654019737
         console.log("jnbjnj")
         const data = await res.json();
         console.log(data)

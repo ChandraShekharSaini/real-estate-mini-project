@@ -6,7 +6,7 @@ The 𝐌𝐄𝐑𝐍 𝐄𝐬𝐭𝐚𝐭𝐞 𝐖𝐞𝐛𝐬𝐢𝐭𝐞 is a 
 
 
 
-#### Home Page
+## Home Page
 
 ![App Screenshot](https://github.com/ChandraShekharSaini/backup/blob/main/Home%20Page.png)
 
